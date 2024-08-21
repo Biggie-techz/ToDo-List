@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main: #CCD5AE;
+    --secondary: #E0E5B6;
+    --sec-light: #FAEDCE;
+    --light: #FEFAE0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--main);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 1rem;
+    gap: 2rem;
+    border-radius: 20px;
+    background-color: var(--light);
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+#input {
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 100%;
+    font-size: 1.25rem;
+    border: 2px solid var(--sec-light);
+    background-color: transparent;
+}
+
+#add {
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    background-color: var(--main);
+    color: #000;
+    border: 2px solid var(--sec-light);
+}
+
+li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    gap: 2rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--sec-light);
+    border-radius: 10px;
+    padding: 1.25rem 0.5rem;
+}
+#list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main);
+    border-radius: 10px;
+    width: 100%;
+    gap: 0.5rem;
+    padding: 0.25rem 0.5rem;
+}
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    right: 1rem;
+}
+#delete,
+#edit {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 1.25rem;
+    border: 2px solid var(--sec-light);
+    cursor: pointer;
+}
+#delete {
+    background-color: rgba(187, 0, 0, 0.493);
+    color: #fff;
+}
+#edit {
+    background-color: rgb(190, 190, 0);
+    color: #fff;
+}
+
+input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    accent-color: green;
+    transition: all 0.5s ease-in-out;
+}
