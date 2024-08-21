@@ -63,6 +63,8 @@ function updateList() {
     list.appendChild(delAll);
 }
 
+
+// ADD BUTTON
 add.addEventListener('click', () => {
     let taskText = input.value.trim();
     if (taskText === '') {

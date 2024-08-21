@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: cursive;
 }
 
 :root {
@@ -10,6 +13,7 @@
     --sec-light: #FAEDCE;
     --light: #FEFAE0;
 }
+
 body {
     display: flex;
     align-items: center;
@@ -24,11 +28,18 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 50%;
     padding: 1rem;
     gap: 2rem;
     border-radius: 20px;
     background-color: var(--light);
+}
+
+h1 {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
 }
 
 .input {
@@ -72,6 +83,7 @@ li {
     border-radius: 10px;
     padding: 1.25rem 0.5rem;
 }
+
 #list {
     position: relative;
     display: flex;
@@ -84,6 +96,7 @@ li {
     gap: 0.5rem;
     padding: 0.25rem 0.5rem;
 }
+
 .actions {
     display: flex;
     align-items: center;
@@ -92,6 +105,7 @@ li {
     position: absolute;
     right: 1rem;
 }
+
 #delete,
 #edit {
     padding: 0.5rem;
@@ -101,12 +115,14 @@ li {
     border: 2px solid var(--sec-light);
     cursor: pointer;
 }
+
 #delete,
 .btn {
     background-color: rgba(187, 0, 0, 0.493);
     color: #fff;
     transition: all 0.3s ease-in-out;
 }
+
 .btn:hover,
 #delete:hover {
     background-color: rgba(187, 0, 0, 0.753);
@@ -118,6 +134,7 @@ li {
     color: #fff;
     transition: all 0.3s ease-in-out;
 }
+
 #edit:hover {
     background-color: rgb(204, 204, 0);
     color: #fff;
@@ -129,4 +146,50 @@ input[type="checkbox"] {
     cursor: pointer;
     accent-color: green;
     transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 1450px) {
+    .container {
+        width: 60%;
+    }
+    
+}
+@media (max-width: 1190px) {
+    .container {
+        width: 70%;
+    }
+    
+}
+@media (max-width: 900px) {
+    .container {
+        width: 70%;
+    }
+    
+}
+@media (max-width: 900px) {
+    * {
+        font-size: 1.1rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    #delete,
+    .btn,
+    #edit,
+    #add {
+        font-size: 1.1rem;
+    }
+    .container {
+        width: 80%;
+    }
+    
+}
+@media (max-width: 550px) {
+    h1 {
+        font-size: 2.75rem;
+    }
+    .container {
+        width: 90%;
+    }
+    
 }
