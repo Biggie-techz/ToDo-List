@@ -49,7 +49,8 @@ body {
     background-color: transparent;
 }
 
-#add {
+#add,
+.btn {
     padding: 0.5rem;
     border-radius: 10px;
     font-size: 1.25rem;
@@ -100,12 +101,25 @@ li {
     border: 2px solid var(--sec-light);
     cursor: pointer;
 }
-#delete {
+#delete,
+.btn {
     background-color: rgba(187, 0, 0, 0.493);
     color: #fff;
+    transition: all 0.3s ease-in-out;
 }
+.btn:hover,
+#delete:hover {
+    background-color: rgba(187, 0, 0, 0.753);
+    color: #fff;
+}
+
 #edit {
     background-color: rgb(190, 190, 0);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+#edit:hover {
+    background-color: rgb(204, 204, 0);
     color: #fff;
 }
 
