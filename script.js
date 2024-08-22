@@ -74,8 +74,6 @@ add.addEventListener('click', () => {
         updateList();
         input.value = '';
     }
-
-
 });
 
 
