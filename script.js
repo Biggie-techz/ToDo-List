@@ -5,6 +5,19 @@ let tasks = [];
 let taskId = 0;
 
 
+// ADD BUTTON
+add.addEventListener('click', () => {
+    let taskText = input.value.trim();
+    if (taskText === '') {
+        alert('Please enter a task');
+    } else {
+        tasks.push({ id: taskId++, task: taskText, completed: false });
+        updateList();
+        input.value = '';
+    }
+});
+
+
 function updateList() {
     list.innerHTML = '';
     tasks.forEach((task) => {
@@ -64,16 +77,5 @@ function updateList() {
 }
 
 
-// ADD BUTTON
-add.addEventListener('click', () => {
-    let taskText = input.value.trim();
-    if (taskText === '') {
-        alert('Please enter a task');
-    } else {
-        tasks.push({ id: taskId++, task: taskText, completed: false });
-        updateList();
-        input.value = '';
-    }
-});
 
 
